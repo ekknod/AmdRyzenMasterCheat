@@ -31,5 +31,9 @@ Copying game memory with AmdRyzenMaster vulnerability
 # Why releasing?
 Because someone else found same vulnerability and made it public: https://h0mbre.github.io/RyzenMaster_CVE/#  
 
+# Youtube Video (EC_PRO LAN android client (wifi))
+[![IMAGE ALT TEXT](http://i3.ytimg.com/vi/l91pJW86KEQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=l91pJW86KEQ "EC_PRO lan (android client)")
+
+
 # Youtube Video (EC_PRO lan raspberry pi client)
 [![IMAGE ALT TEXT](http://i3.ytimg.com/vi/qrUvuK8Hxq8/maxresdefault.jpg)](https://www.youtube.com/watch?v=qrUvuK8Hxq8&feature=youtu.be "EC_PRO lan (rasberry client)")
