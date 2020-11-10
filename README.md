@@ -17,8 +17,11 @@ Logitech GHUB installed ( for mouse input )
 precompiled client: you must register to ekknod.xyz/forum and then log in client with those credentials  
 then download required files: https://ekknod.xyz/downloads/client_private.zip  
 
-copy opengl32.dll to C:\Program Files\AMD\RyzenMaster\bin, enable firewall from AmdRyzenMaster utility  
+copy opengl32.dll to C:\Program Files\AMD\RyzenMaster\bin  
+open amdryzenmaster utility, allow firewall  
+open csgo.exe  
 open client_private.exe in separate PC in your LAN network. 
+
 
 
 # Vulnerabilities
