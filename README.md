@@ -1,4 +1,7 @@
 # EC_PRO-LAN
+
+
+
 Anti-Cheats: (FACEIT, (ESEA w/ custom version)  
 Early 2019 - late 2020. R.I.P. https://h0mbre.github.io/RyzenMaster_CVE/#  
 
@@ -25,3 +28,5 @@ Copying game memory with AmdRyzenMaster vulnerability
 # Why releasing?
 Because someone else found same vulnerability and made it public: https://h0mbre.github.io/RyzenMaster_CVE/#  
 
+# Youtube Video (EC_PRO lan raspberry pi client)
+[![IMAGE ALT TEXT](http://i3.ytimg.com/vi/qrUvuK8Hxq8/maxresdefault.jpg)](https://www.youtube.com/watch?v=qrUvuK8Hxq8&feature=youtu.be "EC_PRO lan (rasberry client)")
