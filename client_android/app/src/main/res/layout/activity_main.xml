@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="V2.0 github.com/ekknod"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/ip_layout">
+        <EditText
+            android:id="@+id/ip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="192.168."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/connect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"> -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength: "
+            android:id="@+id/strength">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/aim_strong"
+            android:layout_width="match_parent"
+            android:layout_height="12pt"
+            android:max="3000"
+            android:min="100"
+            android:progress="1500"></SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fov: "
+            android:id="@+id/fov_text">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/aim_fov"
+            android:layout_width="match_parent"
+            android:layout_height="12pt"
+            android:max="5000"
+            android:min="500"
+            android:progress="2000"></SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PreAim: "
+            android:id="@+id/preaim_text">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/preaim"
+            android:layout_width="match_parent"
+            android:layout_height="12pt"
+            android:max="20"
+            android:min="5"
+            android:progress="9"></SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensitivity: "
+            android:id="@+id/sensitivity_text">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/sensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="12pt"
+            android:max="40"
+            android:min="5"
+            android:progress="20"></SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume: "
+            android:id="@+id/volume_text">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/volume"
+            android:layout_width="match_parent"
+            android:layout_height="12pt"
+            android:max="100"
+            android:min="0"
+            android:progress="70"></SeekBar>
+
+        <CheckBox
+            android:id="@+id/incross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InCross"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/hs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HS Mode"></CheckBox>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
