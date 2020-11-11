@@ -14,7 +14,7 @@ Logitech GHUB installed ( for mouse input )
 # Installation
 
 
-precompiled client: https://www.unknowncheats.me/forum/downloads.php?do=file&id=31551
+precompiled client: https://www.unknowncheats.me/forum/downloads.php?do=file&id=31551  
 copy opengl32.dll to C:\Program Files\AMD\RyzenMaster\bin  
 open amdryzenmaster utility, allow firewall  
 open csgo.exe  
