@@ -14,8 +14,8 @@ Logitech GHUB installed ( for mouse input )
 # Installation
 
 
-precompiled client: you must register to https://ekknod.xyz/forum and then log in client with those credentials  
-then download required files: https://ekknod.xyz/downloads/client_private.zip  
+precompiled client: you must register to **cencored**/forum and then log in client with those credentials  
+then download required files: **cencored**/downloads/client_private.zip  
 
 copy opengl32.dll to C:\Program Files\AMD\RyzenMaster\bin  
 open amdryzenmaster utility, allow firewall  
