@@ -29,7 +29,6 @@ static void *function_list[32];
 static void *function_data;
 static int  function_count, function_size;
 
-
 static void function_add(struct tcp_header *hdr, struct tcp_entry *ehdr)
 {
 	int len = ehdr->next - 4;
@@ -48,7 +47,6 @@ static void function_add(struct tcp_header *hdr, struct tcp_entry *ehdr)
 	VirtualAlloc(function_data, 8192, MEM_COMMIT, PAGE_EXECUTE_READ);
 }
 
-
 static void function_clear(struct tcp_header *hdr, struct tcp_entry *ehdr)
 {
 	VirtualAlloc(function_data, 8192, MEM_COMMIT, PAGE_READWRITE);
@@ -58,13 +56,11 @@ static void function_clear(struct tcp_header *hdr, struct tcp_entry *ehdr)
 	VirtualAlloc(function_data, 8192, MEM_COMMIT, PAGE_EXECUTE_READ);
 }
 
-
 static void function_heap(struct tcp_header *hdr, struct tcp_entry *ehdr)
 {
 	*(uint64_t*)((char *)hdr + hdr->size) = (uint64_t)&heap;
 	hdr->size += sizeof(uint64_t);
 }
-
 
 static void function_address(struct tcp_header *hdr, struct tcp_entry *ehdr)
 {
@@ -72,13 +68,6 @@ static void function_address(struct tcp_header *hdr, struct tcp_entry *ehdr)
 	*(uint64_t*)((char *)hdr + hdr->size) = (uint64_t)function_list[entry->address];
 	hdr->size += sizeof(uint64_t);
 }
-
-struct tcp_entry_copy {
-	struct tcp_entry ehdr;
-	uint64_t dir_entry;
-	uint64_t address;
-	uint32_t length;
-};
 
 static void packet_routine(char *data)
 {
@@ -137,7 +126,6 @@ int main(void)
 	VirtualFree(function_data, 8192, MEM_FREE);
 }
 #else
-
 
 static int key;
 DWORD WINAPI MainThread(LPVOID lpThreadParameter)
